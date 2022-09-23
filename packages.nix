@@ -16,5 +16,6 @@
     flameshot
     kubectl
     terraform
+    element-desktop
   ];
 }
