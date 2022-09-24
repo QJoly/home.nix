@@ -18,5 +18,6 @@
     terraform
     terragrunt
     element-desktop
+    nerdfonts
   ];
 }
