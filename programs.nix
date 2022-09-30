@@ -21,4 +21,7 @@
     };
  
  };
+
+ dconf.enable = true;
+
 }
