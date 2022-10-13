@@ -7,6 +7,8 @@
     meld
     vlc
     tdesktop
+    etcher
+    rpi-imager 
 
 # CLI
     starship
@@ -19,14 +21,14 @@
 
 # DEVOPS
     kubectl
+    k9s
     terraform
     terragrunt
     element-desktop
     nerdfonts
-
-
+    (pkgs.callPackage ./app/devspace.nix {})
+    docker-compose
+    kubernetes-helm
+    kompose
   ];
-
-
-
 }
