@@ -9,15 +9,20 @@
     tdesktop
     etcher
     rpi-imager 
-
+    thunderbird
+    flameshot
+    deluge
 # CLI
     starship
     neovim
     git
     wget
-    thunderbird
     lightlocker
-    flameshot
+    tree
+    img2pdf
+    libwebp
+    imagemagick
+    unzip
 
 # DEVOPS
     kubectl
@@ -30,5 +35,6 @@
     docker-compose
     kubernetes-helm
     kompose
+    kubectx
   ];
 }
