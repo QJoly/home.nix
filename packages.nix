@@ -12,6 +12,7 @@
     thunderbird
     flameshot
     deluge
+
 # CLI
     starship
     neovim
@@ -23,6 +24,7 @@
     libwebp
     imagemagick
     unzip
+    (pkgs.callPackage ./app/comicconverter-nix/default.nix {})
 
 # DEVOPS
     kubectl
