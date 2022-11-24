@@ -7,28 +7,38 @@
     meld
     vlc
     tdesktop
-    etcher
-    rpi-imager 
+    chromium
     thunderbird
     flameshot
-    deluge
+    vscode
+    yubioath-desktop
+    yubikey-manager
+    libreoffice-fresh
+
+# native
+    file
+    findutils
 
 # CLI
+    poppler_utils
     starship
     neovim
+    file
+    findutils
     git
     wget
     lightlocker
     tree
     img2pdf
     libwebp
-    imagemagick
+#    imagemagick
     unzip
-    (pkgs.callPackage ./app/comicconverter-nix/default.nix {})
+#    (pkgs.callPackage ./app/comicconverter-nix/default.nix {})
 
 # DEVOPS
     kubectl
     k9s
+    stern
     terraform
     terragrunt
     element-desktop
@@ -38,5 +48,7 @@
     kubernetes-helm
     kompose
     kubectx
+    k2tf
+#    ansible
   ];
 }
