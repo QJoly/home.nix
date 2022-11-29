@@ -20,6 +20,8 @@
     findutils
 
 # CLI
+    htop
+    zsh
     poppler_utils
     starship
     neovim
@@ -49,6 +51,13 @@
     kompose
     kubectx
     k2tf
-#    ansible
+    ansible
+
+# I3
+    rofi
+    polybar
+    feh
+    
+
   ];
 }
