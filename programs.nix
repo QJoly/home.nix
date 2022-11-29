@@ -11,7 +11,7 @@
      ];
     };
     firefox.enable = true;
-    starship.enable = true;
+    starship.enable = false;
     bash = {
       enable = true;
       shellAliases = {
@@ -19,9 +19,10 @@
         la = "ls -a";
       };
     };
- 
- };
+};
+
 
  dconf.enable = true;
+
 
 }
