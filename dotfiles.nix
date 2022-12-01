@@ -6,5 +6,6 @@
 
 # i3
   home.file.".config/.wallpaper.png".source = ./dotfiles/wallpaper.png;
+  home.file.".config/i3/config".source = ./dotfiles/i3config;
   home.file.".polybar.sh".source = ./dotfiles/polybar.sh;
 }
