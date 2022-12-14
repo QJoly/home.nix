@@ -20,4 +20,4 @@ else
   done
 fi
 
-tail -f /dev/urandom
+sleep infinity
