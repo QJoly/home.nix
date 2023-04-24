@@ -2,19 +2,6 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-# GUI 
-    geany
-    meld
-    vlc
-    tdesktop
-    chromium
-    thunderbird
-    flameshot
-    vscode
-    yubioath-desktop
-    yubikey-manager
-    libreoffice-fresh
-
 # native
     file
     findutils
@@ -31,11 +18,8 @@
     wget
     lightlocker
     tree
-    img2pdf
     libwebp
-#    imagemagick
     unzip
-#    (pkgs.callPackage ./app/comicconverter-nix/default.nix {})
 
 # DEVOPS
     kubectl
