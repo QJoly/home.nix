@@ -10,6 +10,7 @@
     ../../packages/gui/social.nix
     ../../config/git.nix
     ../../config/zsh.nix
+    ../../config/direnv.nix
   ];
 
   programs.zsh = {
