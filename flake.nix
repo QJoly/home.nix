@@ -9,10 +9,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    sops-nix = {
-      url = "github:mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = {
@@ -24,10 +20,12 @@
     ...
   }: 
   let
-    username = builtins.getEnv "USER";
-    email = builtins.getEnv "EMAIL";
     system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
+    #pkgs = nixpkgs.legacyPackages.${system};
+    pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfree = true;
+      };
   in {
     homeConfigurations.kiko = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
@@ -35,7 +33,7 @@
         ./home.nix
         ];
       extraSpecialArgs = {
-        inherit home-manager username email;
+        inherit home-manager;
       };
     };
 

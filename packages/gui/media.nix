@@ -1,16 +1,9 @@
-{ pkgs, ... }: {
-  nixpkgs.config.allowUnfree = true;
+{ lib, pkgs, ... }: {
 
   home.packages = with pkgs; [
-    geany
-    meld
+    spotify
+    audacity
     vlc
-    tdesktop
-    chromium
-    firefox
-    thunderbird
-    flameshot
-    libreoffice-fresh
-    cowsay
   ];
+
 }
