@@ -22,10 +22,5 @@ programs.zsh = {
     plugins = [ "git" "thefuck" ];
     theme = "robbyrussell";
   };
-  initExtra = ''
-    export DOCKER_HOST=unix:///run/user/1000/docker.sock
-    export SOPS_AGE_KEY_FILE=~/.keys/github
-    
-  '';
 };
 }
