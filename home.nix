@@ -3,7 +3,7 @@
 let 
   configFile = builtins.fromJSON (builtins.readFile ./config.json);  
 in rec {
-
+  
   imports = [
     (./host + ("/" + configFile.systemHostname))
   ];
