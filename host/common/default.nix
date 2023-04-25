@@ -1,8 +1,11 @@
 #{ config, pkgs, ... }:
 {
     imports = [
+    ../../config/git.nix
+    ../../config/zsh.nix
     ../../packages/cli/kubernetes.nix
-    ../../packages/cli/git.nix
+    ../../packages/cli/terraform.nix
+    ../../packages/cli/ansible.nix
     ];
 
 }
