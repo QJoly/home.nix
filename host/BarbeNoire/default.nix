@@ -3,6 +3,7 @@
     ../../packages/cli/kubernetes.nix
     ../../packages/cli/terraform.nix
     ../../packages/cli/ansible.nix
+    ../../packages/cli/network.nix
     ../../packages/gui/code.nix
     ../../packages/gui/media.nix
     ../../packages/gui/misc.nix
