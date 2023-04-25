@@ -1,9 +1,9 @@
 repos:
 - repo: https://github.com/sirosen/fix-smartquotes
-  rev: 0.1.1
+  rev: 0.2.0
   hooks:
     - id: fix-smartquotes
 - repo: https://github.com/nix-community/nixpkgs-fmt
-  rev: master
+  rev: v1.3.0
   hooks:
     - id: nixpkgs-fmt
