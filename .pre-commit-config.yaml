@@ -3,3 +3,7 @@ repos:
   rev: 0.1.1
   hooks:
     - id: fix-smartquotes
+- repo: https://github.com/nix-community/nixpkgs-fmt
+  rev: master
+  hooks:
+    - id: nixpkgs-fmt
