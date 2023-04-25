@@ -10,7 +10,7 @@
     firefox
     thunderbird
     flameshot
-    vscode
     libreoffice-fresh
+    cowsay
   ];
 }

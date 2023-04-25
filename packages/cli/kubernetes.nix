@@ -5,15 +5,13 @@
     kubectl
     k9s
     stern
-    terraform
-    terragrunt
-    element-desktop
-    nerdfonts
-    docker-compose
     kubernetes-helm
     kompose
     kubectx
     k2tf
-    ansible
+    kind
+    fluxcd
   ];
 }
+
+
