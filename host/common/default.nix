@@ -1,4 +1,3 @@
-#{ config, pkgs, ... }:
 {
     imports = [
     ../../config/git.nix
@@ -7,5 +6,4 @@
     ../../packages/cli/terraform.nix
     ../../packages/cli/ansible.nix
     ];
-
 }
