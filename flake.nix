@@ -11,41 +11,42 @@
     };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    nixpkgs-stable,
-    sops-nix,
-    home-manager,
-    ...
-  }: 
-  let
-    system = "x86_64-linux";
-    #pkgs = nixpkgs.legacyPackages.${system};
-    pkgs = import nixpkgs {
+  outputs =
+    { self
+    , nixpkgs
+    , nixpkgs-stable
+    , sops-nix
+    , home-manager
+    , ...
+    }:
+    let
+      system = "x86_64-linux";
+      #pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
       };
-  in {
-    homeConfigurations.kiko = home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
-      modules = [
-        ./home.nix
+    in
+    {
+      homeConfigurations.kiko = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = [
+          ./home.nix
         ];
-      extraSpecialArgs = {
-        inherit home-manager;
+        extraSpecialArgs = {
+          inherit home-manager;
+        };
       };
-    };
 
-    # templates = {
-    #   default = {
-    #     path = ./templates/flake;
-    #     description = "Flake with python and go stuff";
-    #   };
-    #   ansible = {
-    #     path = ./templates/ansible;
-    #     description = "Flake with ansible and shellhook to login to awx";
-    #   };
-    # };
-  };
+      # templates = {
+      #   default = {
+      #     path = ./templates/flake;
+      #     description = "Flake with python and go stuff";
+      #   };
+      #   ansible = {
+      #     path = ./templates/ansible;
+      #     description = "Flake with ansible and shellhook to login to awx";
+      #   };
+      # };
+    };
 }

@@ -1,9 +1,9 @@
 { lib, pkgs, ... }: {
 
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-          "discord"
+    "discord"
   ];
-         
+
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
@@ -26,5 +26,5 @@
      },
      "SKIP_HOST_UPDATE": true
     } 
-    '';
+  '';
 }

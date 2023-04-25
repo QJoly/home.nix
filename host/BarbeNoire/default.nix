@@ -1,5 +1,5 @@
 {
-    imports = [
+  imports = [
     ../../packages/cli/kubernetes.nix
     ../../packages/cli/terraform.nix
     ../../packages/cli/ansible.nix
@@ -10,12 +10,12 @@
     ../../packages/gui/social.nix
     ../../config/git.nix
     ../../config/zsh.nix
-    ];
+  ];
 
-programs.zsh = {
-  initExtra = ''
-    export DOCKER_HOST=unix:///run/user/1000/docker.sock
-    export SOPS_AGE_KEY_FILE=~/.keys/github
-  '';
+  programs.zsh = {
+    initExtra = ''
+      export DOCKER_HOST=unix:///run/user/1000/docker.sock
+      export SOPS_AGE_KEY_FILE=~/.keys/github
+    '';
   };
 }
