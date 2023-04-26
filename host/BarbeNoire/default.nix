@@ -11,7 +11,7 @@
     ../../packages/gui/social.nix
     ../../config/git.nix
     ../../config/zsh.nix
-    ../../config/espanso.nix
+    ./espanso.nix
     ../../config/direnv.nix
   ];
 
