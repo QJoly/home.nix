@@ -18,6 +18,6 @@
           - name: output
             type: shell
             params:
-              cmd: "echo Hello from your shell"%
+              cmd: "echo Hello from your shell"
   '';
 }
