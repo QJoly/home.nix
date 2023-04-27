@@ -24,6 +24,7 @@ rec {
 
   programs.zsh = {
     initExtra = ''
+      bindkey -s '^z' 'fg^M'
       export DOCKER_HOST=${DOCKER_HOST}
       export SOPS_AGE_KEY_FILE=~/.keys/github
     '';
