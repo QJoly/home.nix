@@ -7,6 +7,7 @@
       vim-nix
       plenary-nvim
       nerdtree
+      vim-surround
       {
         plugin = lualine-nvim;
         config = "lua require('lualine').setup()";
