@@ -53,8 +53,7 @@ nix-shell '<home-manager>' -A install
 
 ```bash
 cd ~/.config/home-manager 
-# Only if you don't have "kiko" as username
-sed -i "s;kiko;$(whoami);g" flake.nix config.json &&
-    sed -i "s;/home/kiko;$HOME;g" config.json
+sed -i "s;/home/kiko;$HOME;g" config.json
+sed -i "s;kiko;$(whoami);g" flake.nix config.json
 git clone https://github.com/QJoly/home.nix .
 ```
