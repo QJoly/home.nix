@@ -33,8 +33,8 @@
       }
     ];
 
-    extraConfig = ''
-      luafile ~/.config/nvim/settings.lua
-    '';
+    # extraConfig = ''
+    #   luafile ~/.config/nvim/settings.lua
+    # '';
   };
 }
