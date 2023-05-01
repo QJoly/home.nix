@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  bullseye:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    image: qjoly/home-manager-test
+    environment:
+      - INTERACTIVE=true
+    volumes:
+      # - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - ../:/data:ro
+    container_name: nixos-tester
+    command: bash -c "while true; do echo hello; sleep 2; done"
