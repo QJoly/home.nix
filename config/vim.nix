@@ -33,8 +33,10 @@
       }
     ];
 
-    # extraConfig = ''
-    #   luafile ~/.config/nvim/settings.lua
-    # '';
+    extraConfig = ''
+      set number
+      set expandtab
+      set hidden
+    '';
   };
 }
