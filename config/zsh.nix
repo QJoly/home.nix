@@ -19,8 +19,30 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "thefuck" ];
+      plugins = [
+        "docker"
+        "encode64"
+        "git"
+        "git-extras"
+        "man"
+        "nmap"
+        "ssh-agent"
+        "sudo"
+        "systemd"
+        "tig"
+        "tmux"
+        "vi-mode"
+        "yarn"
+        "zsh-navigation-tools"
+        "mix"
+        "thefuck"
+      ];
+
       theme = "robbyrussell";
     };
+    initExtra = ''
+      bindkey -s '^z' 'fg^M'
+    '';
   };
+  #bindkey -s '^z' 'fg^M'
 }
