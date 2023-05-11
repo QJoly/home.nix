@@ -13,10 +13,12 @@ rec {
     ../../packages/gui/misc.nix
     ../../packages/gui/office.nix
     ../../packages/gui/social.nix
+    ../../packages/gui/sway.nix
     ../../config/git.nix
     ../../config/kubernetes.nix
     ../../config/zsh.nix
     ../../config/direnv.nix
+    ../../config/sway.nix
     ../../config/vim.nix
     ./espanso.nix
 
@@ -29,4 +31,6 @@ rec {
       export SOPS_AGE_KEY_FILE=~/.keys/github
     '';
   };
+
+
 }
