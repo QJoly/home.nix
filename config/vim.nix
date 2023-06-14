@@ -8,6 +8,7 @@
       plenary-nvim
       nerdtree
       vim-surround
+      YouCompleteMe
       {
         plugin = lualine-nvim;
         config = "lua require('lualine').setup()";
