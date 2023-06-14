@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     zsh
     thefuck
+    z-lua
   ];
 
   programs.zsh = {
