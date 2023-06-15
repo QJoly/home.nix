@@ -4,7 +4,7 @@ in
 rec {
   imports = [
     ../../packages/cli/kubernetes.nix
-    ../../packages/cli/terraform.nix
+    ../../packages/cli/hashicorp.nix
     ../../packages/cli/ansible.nix
     ../../packages/cli/editors.nix
     ../../packages/cli/network.nix
