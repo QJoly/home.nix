@@ -33,53 +33,9 @@ rec {
               cmd: "curl ${public_ip}"
 
     # French Accents
-      - trigger: "e'"
-        replace: "é"
 
       - trigger: "e`"
         replace: "è"
-
-      - trigger: "e^"
-        replace: "ê"
-
-      - trigger: "e:"
-        replace: "ë"
-
-      - trigger: "o^"
-        replace: "ô"
-
-      - trigger: "a`"
-        replace: "à"
-
-      - trigger: "a^"
-        replace: "â"
-
-      - trigger: "i^"
-        replace: "î"
-
-      - trigger: "i:"
-        replace: "ï"
-
-      - trigger: "u`"
-        replace: "ù"
-
-      - trigger: "u^"
-        replace: "û"
-
-      - trigger: "u:"
-        replace: "ü"
-
-      - trigger: "oe"
-        replace: "œ"
-
-      - trigger: "ae"
-        replace: "æ"
-
-      - trigger: "y:"
-        replace: "ÿ"
-
-      - trigger: "c,"
-        replace: "ç"
 
       - trigger: "E'"
         replace: "É"
