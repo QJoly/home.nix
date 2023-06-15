@@ -13,5 +13,4 @@ nix-env -e git
 sed -i "s;BarbeNoire;common;g" config.json
 sed -i "s;/home/kiko;$HOME;g" config.json
 sed -i "s;kiko;$(whoami);g" flake.nix config.json
-    
 ```
