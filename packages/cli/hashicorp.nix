@@ -5,6 +5,7 @@
     terragrunt
     terraform
     terraform-docs
+    packer
   ];
 }
 
