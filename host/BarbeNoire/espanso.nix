@@ -67,12 +67,6 @@ rec {
       - trigger: "U`"
         replace: "Ù"
 
-      - trigger: "U^"
-        replace: "Û"
-
-      - trigger: "U:"
-        replace: "Ü"
-
       - trigger: "OE"
         replace: "Œ"
 
@@ -105,5 +99,11 @@ rec {
         
       - trigger: ":drestart"
         replace: "docker-compose restart"
+
+      - trigger: "ww"
+        replace: "<"
+
+      - trigger: "xx"
+        replace: ">"
   '';
 }
