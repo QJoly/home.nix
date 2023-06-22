@@ -9,6 +9,7 @@
       nerdtree
       vim-surround
       YouCompleteMe
+      vim-hcl
       {
         plugin = lualine-nvim;
         config = "lua require('lualine').setup()";
