@@ -6,5 +6,6 @@
     ../../packages/cli/ansible.nix
     ../../config/vim.nix
     ../../config/zsh.nix
+    ./espanso.nix
   ];
 }
