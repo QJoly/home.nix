@@ -13,7 +13,7 @@
   ];
 
 
-  home.file.".config/discord/settings.json".text = ''
+  home.file.".config/discord/settings.json.ext".text = ''
     {
      "BACKGROUND_COLOR": "#202225",
      "IS_MAXIMIZED": false,
