@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     kubectl
     k9s
+    krew
     stern
     kubernetes-helm
     kompose

@@ -43,6 +43,7 @@
     };
     initExtra = ''
       bindkey -s '^z' 'fg^M'
+      path+=('~/.krew/bin')
     '';
   };
   #bindkey -s '^z' 'fg^M'
