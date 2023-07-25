@@ -30,7 +30,6 @@ let
   red1 = "#db4b4b";
 in
 rec {
-
   home.file.".config/k9s/skin.yml".text = ''
     # Tokyonight colorscheme taken from:
     # https://raw.githubusercontent.com/folke/tokyonight.nvim/main/lua/tokyonight/colors.lua
