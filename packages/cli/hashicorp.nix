@@ -6,6 +6,8 @@
     terraform
     terraform-docs
     packer
+    consul
+    vault
   ];
 }
 
