@@ -10,7 +10,7 @@ set -g @plugin 'tmux-plugins/tpm'
 # ---------- dracula --------------
 set -g @plugin 'dracula/tmux'
 # available plugins: battery, cpu-usage, git, gpu-usage, ram-usage, network, network-bandwidth, network-ping, attached-clients, network-vpn, weather, time, spotify-tui, kubernetes-context
-set -g @dracula-plugins ${dracula_plugin}
+set -g @dracula-plugins "${dracula_plugin}"
 set -g @dracula-show-empty-plugins false
 ## available colors: white, gray, dark_gray, light_purple, dark_purple, cyan, green, orange, red, pink, yellow
 set -g @dracula-cpu-usage-colors "red dark_gray"
