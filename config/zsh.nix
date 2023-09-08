@@ -1,4 +1,10 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+
+let
+  configFile = builtins.fromJSON (builtins.readFile ../config.json);
+in
+
+rec {
 
   home.packages = with pkgs; [
     zsh
@@ -41,10 +47,12 @@
 
       theme = "robbyrussell";
     };
-    initExtra = ''
+
+    initExtra = "
       bindkey -s '^z' 'fg^M'
-      path+=('~/.krew/bin')
-    '';
+      path+=('${configFile.userConfig.home}/.krew/bin')
+      path+=('${configFile.userConfig.home}/.local/bin')
+      please
+    ";
   };
-  #bindkey -s '^z' 'fg^M'
 }
