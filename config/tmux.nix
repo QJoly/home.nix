@@ -1,5 +1,5 @@
 let
-  dracula_plugin = "cpu-usage ram-usage network network-ping ram-usage, network-bandwidth, kubernetes-context";
+  dracula_plugin = "cpu-usage ram-usage network git attached-clients network-vpn time ram-usage";
   bg = "#1a1b26";
   bg_highlight = "#292e42";
 in
@@ -9,7 +9,7 @@ set -g @plugin 'tmux-plugins/tpm'
 
 # ---------- dracula --------------
 set -g @plugin 'dracula/tmux'
-# available plugins: battery, cpu-usage, git, gpu-usage, ram-usage, network, network-bandwidth, network-ping, attached-clients, network-vpn, weather, time, spotify-tui, kubernetes-context
+# available plugins: battery, cpu-usage, git, gpu-usage, ram-usage, network, attached-clients, network-vpn, weather, time
 set -g @dracula-plugins "${dracula_plugin}"
 set -g @dracula-show-empty-plugins false
 ## available colors: white, gray, dark_gray, light_purple, dark_purple, cyan, green, orange, red, pink, yellow

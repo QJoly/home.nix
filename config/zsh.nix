@@ -52,7 +52,8 @@ rec {
       bindkey -s '^z' 'fg^M'
       path+=('${configFile.userConfig.home}/.krew/bin')
       path+=('${configFile.userConfig.home}/.local/bin')
-      please
+      . ${configFile.userConfig.home}/.guix-profile/etc/profile
+      please showtasks
     ";
   };
 }

@@ -15,7 +15,6 @@
     { self
     , nixpkgs
     , nixpkgs-stable
-    , sops-nix
     , home-manager
     , ...
     }:
@@ -28,7 +27,7 @@
       };
     in
     {
-      homeConfigurations.kiko = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.qjoly01 = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
           ./home.nix
