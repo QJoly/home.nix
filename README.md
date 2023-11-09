@@ -55,6 +55,6 @@ nix-shell '<home-manager>' -A install
 cd ~/.config/home-manager
 rm *
 git clone https://github.com/QJoly/home.nix .
-sed -i "s;/home/kiko;$HOME;g" config.json
-sed -i "s;kiko;$(whoami);g" flake.nix config.json
+sed -i "s;HOME_DIR;$HOME;g" config.json
+sed -i "s;YOUR_USERNAME;$(whoami);g" flake.nix config.json
 ```

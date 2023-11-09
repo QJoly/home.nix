@@ -1,8 +1,8 @@
 {
-    "systemHostname": "work",
+    "systemHostname": "Barbarossa",
     "userConfig":
     {
-      "username": "qjoly01",
-      "home": "/home/qjoly01"
+      "username": "YOUR_USERNAME",
+      "home": "HOME_DIR"
     }
   }
