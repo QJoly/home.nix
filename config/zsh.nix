@@ -19,6 +19,7 @@ rec {
     enableSyntaxHighlighting = true;
     shellAliases = {
       ll = "ls -l";
+      cd = "z";
     };
     history = {
       size = 10000;
@@ -52,8 +53,9 @@ rec {
       bindkey -s '^z' 'fg^M'
       path+=('${configFile.userConfig.home}/.krew/bin')
       path+=('${configFile.userConfig.home}/.local/bin')
-      . ${configFile.userConfig.home}/.guix-profile/etc/profile
       please showtasks
+      eval \"$(zoxide init zsh)\"
+
     ";
   };
 }
